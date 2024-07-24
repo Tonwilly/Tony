@@ -2,9 +2,11 @@ import {cart, removeFromCart, updateDeliveryOption} from './cart2.js';
 import { updateCheckoutItems } from './checkoutHeader.js';
 import {products, getProduct} from './products2.js';
 import  formatCurrency  from './utilities/money.js';
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js';
 import { deliveryOptions, getDeliveryOption, calculateDeliveryDate } from './deliveryOption.js';
 import { renderPaymentSummary } from './paymentSummary.js';
+
 
 export function renderOrderSummary() {
 
