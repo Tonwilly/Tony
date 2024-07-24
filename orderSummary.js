@@ -1,4 +1,5 @@
-import {cart, removeFromCart, updateCheckoutItems, updateDeliveryOption} from './cart2.js';
+import {cart, removeFromCart, updateDeliveryOption} from './cart2.js';
+import { updateCheckoutItems } from './checkoutHeader.js';
 import {products, getProduct} from './products2.js';
 import  formatCurrency  from './utilities/money.js';
 import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js';
@@ -131,6 +132,7 @@ export function renderOrderSummary() {
                 container.remove();
 
                 renderPaymentSummary();
+                updateCheckoutItems();
             });
         });
 
